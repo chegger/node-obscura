@@ -1,0 +1,29 @@
+{
+  "name": "node-obscura",
+  "version": "0.1.0",
+  "description": "Node.js runtime wrapper for the Obscura browser binary.",
+  "main": "index.cjs",
+  "types": "index.d.ts",
+  "files": [
+    "index.cjs",
+    "index.d.ts",
+    "postinstall.cjs",
+    "README.md"
+  ],
+  "scripts": {
+    "postinstall": "node postinstall.cjs"
+  },
+  "keywords": [
+    "obscura",
+    "browser",
+    "cdp",
+    "playwright",
+    "puppeteer",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
