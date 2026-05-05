@@ -4,11 +4,19 @@
   "description": "Node.js runtime wrapper for the Obscura browser binary.",
   "main": "index.cjs",
   "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.cjs",
+      "default": "./index.cjs"
+    }
+  },
   "files": [
     "index.cjs",
     "index.d.ts",
     "postinstall.cjs",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "postinstall": "node postinstall.cjs"
@@ -21,8 +29,17 @@
     "puppeteer",
     "automation"
   ],
-  "author": "",
+  "author": "Christian Egger",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chegger/node-obscura.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chegger/node-obscura/issues"
+  },
+  "homepage": "https://github.com/chegger/node-obscura#readme",
+  "sideEffects": false,
   "engines": {
     "node": ">=18"
   }
